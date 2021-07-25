@@ -1,0 +1,64 @@
+html {
+  font: normal 400 16px/1.6 'Fira Code', 'Source Code Pro', monospace;
+  background-color: #1e1f20;
+  color: #d2d3d4;
+}
+
+body {
+  max-width: 800px;
+  margin: auto;
+  padding: 1.6rem;
+}
+
+a:link, a:visited {
+  color: #1aa8f5;
+}
+
+a:active, a:focus {
+  color: #ffff00;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  display: inline-block;
+  font: inherit;
+  padding-bottom: 0.5em;
+  margin: 0;
+  border-bottom: 5px double currentColor;
+}
+
+nav {
+  margin: 1rem 0;
+}
+
+section {
+  margin: 2rem 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+li {
+  margin: 1rem 0;
+}
+
+li:before  {
+  content: '— ';
+}
+
+ul a {
+  text-decoration: none;
+}
+
+ul a span {
+  text-decoration: underline;
+}
+
+ul a:after {
+  content: attr(href);
+  font-size: 0.7em;
+  color: #979797;
+  display: block;
+}
