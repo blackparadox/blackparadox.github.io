@@ -18,6 +18,10 @@ a:active, a:focus {
   color: #ffff00;
 }
 
+a:focus {
+  outline: none;
+}
+
 h1, h2, h3, h4, h5, h6 {
   display: inline-block;
   font: inherit;
@@ -42,14 +46,23 @@ ul {
 
 li {
   margin: 1rem 0;
+  display: flex;
+  gap: 0.6em;
 }
 
 li:before  {
   content: '— ';
 }
 
+li:focus-within:before {
+  content: '▸ ';
+}
+
 ul a {
   text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
 }
 
 ul a span {
@@ -61,4 +74,5 @@ ul a:after {
   font-size: 0.7em;
   color: #979797;
   display: block;
+  word-wrap: break-word;
 }
