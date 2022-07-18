@@ -8,6 +8,7 @@ body {
   max-width: 800px;
   margin: auto;
   padding: 1.6rem;
+  scroll-behavior: smooth;
 }
 
 a:link, a:visited {
